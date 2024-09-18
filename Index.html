@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://db.onlinewebfonts.com/c/429d7be4109ed5e4f17b52951d6f2215?family=Nirmala+UI+Bold"
+      rel="stylesheet">
+   <link href="https://db.onlinewebfonts.com/c/429d7be4109ed5e4f17b52951d6f2215?family=Nirmala+UI+Regular"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+
+
+
+   <link rel="stylesheet" href="./css/normalize.css">
+
+
+   <link rel="stylesheet" href="./css/app.min.css">
+   <title>Test for AdversterX</title>
+</head>
+
+
+<body>
+   <div class="section">
+      <!-- Background -->
+      <div class="section__background"></div>
+      <div class="section__icon">
+         <i class="fa-solid fa-volume-low sound-icon"></i>
+      </div>
+
+
+      <!-- Characters for the first step -->
+      <div class="section__characters section__characters--step-1">
+         <img src="./image/character1.png" alt="Character 1" class="section__character character1">
+         <img src="./image/character2.png" alt="Character 2" class="section__character character2">
+      </div>
+
+      <!-- Step 1 -->
+      <div class="section__step section__step--1 section__step--active section__step--wellcome">
+         <div class="subtext box-small">Stop spending time on mediocre online stuff!</div>
+         <h2 class="box">Explore&nbsp;our&nbsp;intriguing
+            3D game</h2>
+         <h4 class="box2x text">instead and experience unparalleled&nbsp;pleasure&nbsp;like&nbsp;you've never seen
+            before.
+         </h4>
+         <div class="section__button">
+            <button id="no-thanks" class="button button__secondary" disabled>No, thanks</button>
+            <button id="next-1" class="button button__primary">Continue</button>
+         </div>
+      </div>
+
+      <!-- Step 2 with swiper functionality -->
+      <div class="section__swiper">
+         <div class="section__step section__step--2 section__step--swiper">
+            <h3 class="box">Who Would You Choose as Your First Partner, if you play right now?</h3>
+            <div class="section__swiper__slider">
+               <div class="swiper mySwiper" style="margin-bottom: 57px;">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="swiper__card">
+                           <img src="/image/slide1.png" alt="slide ">
+                           <div class="swiper__title">
+                              Your Neighbor
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper__card">
+                           <img src="/image/slide2.png" alt="slide ">
+                           <div class="swiper__title">
+                              Step-Sister </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper__card">
+                           <img src="/image/slide3.png" alt="slide ">
+                           <div class="swiper__title">
+                              Famous Celebrity </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <!-- Navigation arrows -->
+                  <div class="custom-swiper-button-prev">
+                     <i class="fa fa-arrow-left"></i>
+                  </div>
+                  <div class="custom-swiper-button-next">
+                     <i class="fa fa-arrow-right"></i>
+                  </div>
+               </div>
+               <button id="next-2" class="button button__primary button__primary--large">Next</button>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- Characters for the last step -->
+      <div class="section__characters section__characters--step-3 ">
+         <img src="./image/character3.png" alt="Character 3" class="section__character character3">
+         <img src="./image/character4.png" alt="Character 4" class="section__character character4">
+      </div>
+
+      <!-- Step 3 -->
+      <div class="section__step section__step--3 section__step--last">
+         <h1 class="box">Warning</h1>
+         <div class="text box3x">You must be at least 18 years old and comfortable with mature topics to play the game.
+         </div>
+         <button id="continue-3" class="button button__primary button__primary--large">Ok, Continue</button>
+
+      </div>
+   </div>
+
+   <script src="./js/app.js" defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+
+</html>

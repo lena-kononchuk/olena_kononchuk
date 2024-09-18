@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Less",
+      "type": "shell",
+      "command": "lessc",
+      "args": [
+        "./less/app.less",
+        "./css/app.css"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Minify CSS",
+      "type": "shell",
+      "command": "postcss",
+      "args": [
+        "./css/app.css",
+        "--use",
+        "cssnano",
+        "--dir",
+        "./css"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": [
+        "Compile Less"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
