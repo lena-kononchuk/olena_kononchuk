@@ -29,40 +29,40 @@
       box-shadow: 4px 4px 20px 0px #FFFFFF66;
 
       &--large {
-         align-items: center;
-         min-width: 300px;
+         text-align: center;
+         min-width: 330px;
          background: linear-gradient(103.39deg, #FFE53B -32.17%, #FF2525 114.07%);
          box-shadow: 4px 4px 20px 0px #FFFFFF66;
          box-sizing: border-box;
          width: 450px;
 
-         @media (max-width: 360px) {
+         .xxs({
             padding: 15px 0;
             width: 100%;
-         }
-
-      }
-
-      &:hover {
-         box-shadow: 8px 8px 10px 0px #00000066 inset;
-      }
+         });
 
    }
 
-   &__secondary {
-      border: 2px solid #FFFFFF;
-      padding: 24px 77.5px;
-
-      &:hover {
-         background: #373737;
-         box-shadow: 4px 4px 20px 0px #FFFFFF66;
-      }
+   &:hover {
+      box-shadow: 8px 8px 10px 0px #00000066 inset;
    }
+
+}
+
+&__secondary {
+   border: 2px solid #FFFFFF;
+   padding: 24px 77.5px;
+
+   &:hover {
+      background: #373737;
+      box-shadow: 4px 4px 20px 0px #FFFFFF66;
+   }
+}
 
 
 }
 
-@media (max-width: 360px) {
+.xxs({
    .button {
       font-size: 24px;
       line-height: 24px;
@@ -71,4 +71,4 @@
       line-height: 10px;
       padding: 0;
    }
-}
+});

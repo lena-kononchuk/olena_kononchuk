@@ -53,21 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Swiper initialization
 document.addEventListener('DOMContentLoaded', function () {
    // Initialize Swiper with keyboard support enabled
    const swiper = new Swiper('.mySwiper', {
-      loop: true,  // Enables looping of slides
-      speed: 500,  // Transition speed between slides
+      loop: true,
+      speed: 500,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
       pagination: {
-         clickable: true,  // Makes pagination bullets clickable
+         clickable: true,
       },
-      // Enable keyboard navigation
       keyboard: {
-         enabled: true,  // Enable keyboard control
-         onlyInViewport: true,  // Only activate keyboard control if swiper is visible in the viewport
+         enabled: true,
+         onlyInViewport: false,
       },
    });
+
 
    // Event listeners for custom navigation arrows
    const nextButton = document.querySelector('.custom-swiper-button-next');
@@ -92,4 +93,3 @@ document.addEventListener('DOMContentLoaded', function () {
       }
    });
 });
-
